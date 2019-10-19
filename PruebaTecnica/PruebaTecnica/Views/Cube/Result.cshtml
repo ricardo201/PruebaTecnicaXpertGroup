@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Result";
+}
+<p><b>Input</b></p>
+<p>@{
+    WriteLiteral(Model.input.Replace("\r\n", "<br />"));
+    }
+</p>
+
+<p><b>Ouput</b></p>
+<p>@foreach (string line in Model.output)
+{
+    WriteLiteral(line + "<br />");
+}
+</p>
+
