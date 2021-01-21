@@ -20,6 +20,7 @@ namespace PruebaTecnica.Models
         {
             output = new List<string>();
             string[] lines = input.Split("\r\n");
+            int a=0;
 
             long testCase = long.Parse(lines[0]);
             long j = 1;
